@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/signalCarrierName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CarrierName" />
+
+            <TextView
+                android:id="@+id/signalNetworkType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CarrierName" />
+
+            <TextView
+                android:id="@+id/signalMHz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mhz" />
+
+            <TextView
+                android:id="@+id/signalDbm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-dBm" />
+
+            <TextView
+                android:id="@+id/signalGrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-dBm" />
+
+            <Space
+
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/signalRowTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="rowData" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/signalEtcRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-dBm" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
